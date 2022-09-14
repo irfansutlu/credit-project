@@ -7,9 +7,57 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous" />
     <title>Credit Calculator</title>
   </head>
-  <body>
-    <label for=""></label>
-
+  <body class="bg-dark">
+    <div class="container mt-5 d-block">
+        <h1 class="text-warning text-center">Credit Calculator</h1>
+        <section class="mt-5 text-light d-block">
+            <label for="credit-types" class="form-label fw-bold">Credit Types:</label><br>
+            <select name="credit-types" id="credit-types" class="form-select mt-2 mb-3 p-2">
+                <option value="no-one" selected>Choose</option>
+                <option value="house">Housing Credit</option>
+                <option value="personal">Personal Finance Credit</option>
+                <option value="auto">Auto Credit</option>
+            </select>
+            <form>
+                <div class="mb-3">
+                    <label for="date" class="form-label fw-bold">Date:</label><br>
+                    <input type="number" name="number" id="date" class="form-control mt-2 mb-3 p-2">
+                </div class="mb-3">
+                <div class="mb-3">
+                    <label for="sum" class="form-label fw-bold">Sum:</label><br>
+                    <input type="number" name="number" id="sum" class="form-control mt-2 mb-3 p-2">
+                </div>
+                <button class="btn btn-warning mt-3 w-100">Calculate</button>
+            </form>
+        </section>
+        <section id="results" class="container mt-5">
+          <h1 class="text-center text-warning mb-5">Credit Information</h1>
+            <table class="table table-warning table-bordered border-dark">
+              <thead>
+                <tr>
+                  <th scope="col">Kredi Miktari</th>
+                  <td scope="col">First</td>
+                  <th scope="col">Kredi Tipi</th>
+                  <td scope="col">Handle</td>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row">Vade</th>
+                  <td>Mark</td>
+                  <th>Faiz Orani</th>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <th scope="row">Toplam Tutar</th>
+                  <td>Jacob</td>
+                  <th>Taksit Tutari</th>
+                  <td>@fat</td>
+                </tr>
+              </tbody>
+            </table>
+        </section>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous" ></script>
     <script src="/app.js"></script>
   </body>

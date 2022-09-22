@@ -18,41 +18,39 @@
                 <option value="personal">Personal Finance Credit</option>
                 <option value="auto">Auto Credit</option>
             </select>
-            <form>
                 <div class="mb-3">
-                    <label for="date" class="form-label fw-bold">Date:</label><br>
-                    <input type="number" name="number" id="date" class="form-control mt-2 mb-3 p-2">
+                    <label for="month" class="form-label fw-bold">Month:</label><br>
+                    <input type="number" name="number" id="month" class="form-control mt-2 mb-3 p-2">
                 </div class="mb-3">
                 <div class="mb-3">
-                    <label for="sum" class="form-label fw-bold">Sum:</label><br>
-                    <input type="number" name="number" id="sum" class="form-control mt-2 mb-3 p-2">
+                    <label for="amount" class="form-label fw-bold">Amount:</label><br>
+                    <input type="number" name="number" id="amount" class="form-control mt-2 mb-3 p-2">
                 </div>
-                <button class="btn btn-warning mt-3 w-100">Calculate</button>
-            </form>
+                <button class="btn btn-warning mt-3 w-100" id="calc-btn">Calculate</button>
         </section>
-        <section id="results" class="container mt-5">
+        <section id="results" class="container mt-5 ">
           <h1 class="text-center text-warning mb-5">Credit Information</h1>
             <table class="table table-warning table-bordered border-dark">
               <thead>
                 <tr>
                   <th scope="col">Kredi Miktari</th>
-                  <td scope="col">First</td>
+                  <td scope="col" id="total-amount"></td>
                   <th scope="col">Kredi Tipi</th>
-                  <td scope="col">Handle</td>
+                  <td scope="col" id="choosen-credit"></td>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <th scope="row">Vade</th>
-                  <td>Mark</td>
+                  <td id="total-month"></td>
                   <th>Faiz Orani</th>
-                  <td>@mdo</td>
+                  <td id="interest-rates"></td>
                 </tr>
                 <tr>
                   <th scope="row">Toplam Tutar</th>
-                  <td>Jacob</td>
+                  <td id="total-result"></td>
                   <th>Taksit Tutari</th>
-                  <td>@fat</td>
+                  <td id="installment"></td>
                 </tr>
               </tbody>
             </table>
